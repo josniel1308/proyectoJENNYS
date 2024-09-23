@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Mi Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Servicios</h1>
+        <div class="theme-menu">
+            <button onclick="toggleThemeMenu()">&#8226;&#8226;&#8226;</button>
+            <div id="theme-options" class="theme-options">
+                <button class="theme-button white-theme" onclick="cambiarTema('predeterminado')">predeterminado</button>
+                <button class="theme-button celeste-theme" onclick="cambiarTema('claro')">claro</button>
+                <button class="theme-button white-theme" onclick="cambiarTema('white')">Blanco</button>  
+    </header>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="inicio.html">index</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contactos.html">Contacto</a>
+    </nav>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos una gama de servicios personalizados para mejorar la experiencia de nuestros clientes con nuestros productos ecológicos. Desde la asesoría en el cuidado de plantas hasta servicios de jardinería sostenible.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function cambiarTema(color) {
+            document.documentElement.className = color + '-theme';
+        }
+
+        function toggleThemeMenu() {
+            const themeOptions = document.getElementById('theme-options');
+            themeOptions.style.display = themeOptions.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>
+
